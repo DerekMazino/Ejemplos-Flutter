@@ -48,6 +48,12 @@ flutter:
   assets:
     - assets/img/GOW.jpeg
     - assets/img/TLOUP2.jpeg
+    - assets/img/Uncharted4.jpeg
+    - assets/img/alanW1.png
+    - assets/img/Horizon0.jpeg
+    - assets/img/Horizon1.jpeg
+    - assets/img/Horizon2.webp
+    - assets/img/Horizon3.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
