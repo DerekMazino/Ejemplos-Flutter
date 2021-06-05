@@ -34,14 +34,20 @@ class MyApp extends StatelessWidget {
                 )
               ),
             ),
-            Container(
+            Opacity(
+              opacity: 0.8,
+              
+              child: Container(
               color: Colors.blue.shade100,
               padding: EdgeInsets.all(20.0),
               margin: EdgeInsets.fromLTRB(10, 300, 10, 300),
               alignment: Alignment.center,
-              child: Opacity(
-              opacity: 0.5 ,
-              child: const Text("Hola Deyci-chan"),
+              child: Text('Hola enanita bella!',
+                        style: Theme.of(context)
+                            .textTheme
+                            .headline4!
+                            .copyWith(color: Colors.white)
+              ),
             ),
             ),
           ],
