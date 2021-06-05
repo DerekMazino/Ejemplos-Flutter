@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:primera_app/description_place.dart';
+import 'review_list.dart';
 void main() {
   runApp(MyApp());
 }
@@ -27,7 +28,8 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Primera app'),
         ),
-        body: new DescriptionPlace('Noruega', 4, descriptionDummy),
+        //body: new DescriptionPlace('Noruega', 4, descriptionDummy),
+        body: ReviewList(),
       ),
     );
   }
