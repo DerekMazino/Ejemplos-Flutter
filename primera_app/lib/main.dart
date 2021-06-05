@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:primera_app/description_place.dart';
 import 'review_list.dart';
 import 'gradient_back.dart';
+import 'header_appbar.dart';
 void main() {
   runApp(MyApp());
 }
@@ -38,7 +39,7 @@ Zero Down''';
                 ReviewList()
               ],
             ),
-            GradientBack(title)
+            HeaderAppBar()
           ],
         ),
       ),
