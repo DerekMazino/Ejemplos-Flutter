@@ -20,12 +20,31 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
+      home: Scaffold(// Es un widget que permite dar estructyra al programa
         appBar: AppBar(
-          title: Text("Hola mundo!"),
+          title: Text("Reto 2"),
         ),
-        body: Center(
-          child: Text("Hola Mundo Platzi"),
+        body: Stack(
+          children: <Widget> [
+            Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/GOW.jpeg'),
+                  fit: BoxFit.cover,
+                )
+              ),
+            ),
+            Container(
+              color: Colors.blue.shade100,
+              padding: EdgeInsets.all(20.0),
+              margin: EdgeInsets.fromLTRB(10, 300, 10, 300),
+              alignment: Alignment.center,
+              child: Opacity(
+              opacity: 0.5 ,
+              child: const Text("Hola Deyci-chan"),
+            ),
+            ),
+          ],
         ),
       )//MyHomePage(title: 'Flutter Demo Home Page'),
     );
