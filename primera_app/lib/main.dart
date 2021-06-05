@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:primera_app/description_place.dart';
 import 'review_list.dart';
+import 'gradient_back.dart';
 void main() {
   runApp(MyApp());
 }
@@ -25,11 +26,18 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Primera app'),
-        ),
         //body: new DescriptionPlace('Noruega', 4, descriptionDummy),
-        body: ReviewList(),
+        body: Stack(//Colocar un elemento sobre otro
+          children: <Widget>[
+            ListView(
+              children: <Widget>[
+                DescriptionPlace('Noruega', 4, descriptionDummy),
+                ReviewList()
+              ],
+            ),
+            GradientBack()
+          ],
+        ),
       ),
     );
   }
