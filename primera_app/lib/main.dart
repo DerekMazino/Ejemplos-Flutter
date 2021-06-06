@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:primera_app/description_place.dart';
-import 'review_list.dart';
-import 'header_appbar.dart';
+import 'primera_app_trips.dart';
 void main() {
   runApp(MyApp());
 }
@@ -28,20 +26,7 @@ Zero Down''';
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Scaffold(
-        //body: new DescriptionPlace('Noruega', 4, descriptionDummy),
-        body: Stack(//Colocar un elemento sobre otro
-          children: <Widget>[
-            ListView(
-              children: <Widget>[
-                DescriptionPlace(principal, 4, descriptionDummy),
-                ReviewList()
-              ],
-            ),
-            HeaderAppBar()
-          ],
-        ),
-      ),
+      home: GameTrips()
     );
   }
 }
